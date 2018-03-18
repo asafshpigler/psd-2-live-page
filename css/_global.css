@@ -146,6 +146,7 @@ header ul li:hover {
 }
 
 header div.hamburger {
+    cursor: pointer;
     align-self: center;
     font-size: 30px;
 }
@@ -395,7 +396,7 @@ footer button {
     width: 30px;
     border: none;
 }
-.modal-header button:hover {
+.modal-header button:hover {    
     background-color: lightcoral;
     color: white;
     transition: all 0s;
