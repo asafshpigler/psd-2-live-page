@@ -159,6 +159,10 @@ header div.hamburger {
     font-size: 30px;
 }
 
+.hamburger:hover {
+    cursor: pointer;
+}
+
 /* ----main---- */
 
 main {

@@ -10,11 +10,9 @@ function toggleMenu() {
     var elHamburger = document.querySelector('.hamburger');
     
     if (elHamburger.classList.contains('fa-bars')) {
-        console.log('HEY');
         elHamburger.classList.remove('fa-bars');
         elHamburger.classList.add('fa-times');
     } else {
-        console.log('YO');        
         elHamburger.classList.add('fa-bars');
         elHamburger.classList.remove('fa-times');
     }
@@ -55,7 +53,7 @@ function toggleJournalList() {
     elJournalList.classList.toggle('open-menu');
 }
 
-var gMouseOverListenerAttached = false;
+var gMouseOverListenerAttached = null;
 
 function attachToggleJournalList(ev) {
     if (document.body.clientWidth > 720) {
