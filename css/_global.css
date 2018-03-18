@@ -146,7 +146,6 @@ header ul li:hover {
 }
 
 header div.hamburger {
-    cursor: pointer;
     align-self: center;
     font-size: 30px;
 }
@@ -206,7 +205,7 @@ main>div>img {
 
 .txt-container button {
     display: inline-flex;
-    align-self: flex-start; 
+    align-self: center;
     padding: 10px 23px;
     border: 2px solid #c2c2c2;
     border-radius: 20px;
