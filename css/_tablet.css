@@ -47,6 +47,7 @@ main > div > img {
 .txt-container button {
     font-size: 1.5vw;
     padding: 1vw 2vw;
+    align-self: flex-start;
 }
 
 .modal-content {
