@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body class="clean-body">
+<body class="clean-body" onresize="attachToggleJournalList()" onload="attachToggleJournalList()">
     <header>
         <div class="container flex flex-space-around">
             <div class="logo">Blogin
@@ -18,7 +18,13 @@
             </div>
             <nav>
                 <ul class="flex clean-list">
-                    <li>journal</li>
+                    <li class="journal">journal
+                        <ul class="clean-list flex journal-list">
+                            <li onclick="stopClickPropo(event)">October 2016</li>
+                            <li onclick="stopClickPropo(event)">January 2017</li>
+                            <li onclick="stopClickPropo(event)">July 2017</li>
+                        </ul>
+                    </li>
                     <li>about</li>
                     <li>work</li>
                     <li>contact</li>

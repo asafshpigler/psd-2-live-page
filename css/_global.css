@@ -115,8 +115,8 @@ header nav {
     overflow: hidden;
 }
 
-header nav.open-nav {
-    max-height: 400px;
+.open-menu {
+    max-height: 1000px;
 }
 
 header ul {
@@ -143,6 +143,15 @@ header ul li:hover {
     cursor: pointer;
     box-shadow: inset 0 -6px 0 #58c93a;
     color: #58c93a;
+}
+
+.journal-list {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.journal-list.open-menu {
+    max-height: 1000px;
 }
 
 header div.hamburger {

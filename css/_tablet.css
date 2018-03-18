@@ -1,6 +1,7 @@
 header nav {
     position: initial;
     max-height: none;
+    overflow: visible;    
 }
 
 header ul {
@@ -16,6 +17,16 @@ header ul li {
     line-height: 130px;
     background-color: transparent;
     transition: .3s;
+}
+
+.journal-list {
+    flex-direction: column;
+}
+
+.journal-list li {
+    background-color: #292929;
+    height: 70px;
+    line-height: 70px;
 }
 
 header .hamburger {

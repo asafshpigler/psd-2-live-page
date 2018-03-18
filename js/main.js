@@ -5,7 +5,7 @@ function toggleArrow(el) {
 
 function toggleMenu() {
     var elMenuNav = document.querySelector('header nav');
-    elMenuNav.classList.toggle('open-nav');
+    elMenuNav.classList.toggle('open-menu');
 
     var elHamburger = document.querySelector('.hamburger');
     
@@ -48,4 +48,35 @@ function togglePageNavColor(el) {
 function toggleModal() {
     var elModal = document.querySelector('.modal');
     elModal.classList.toggle('show');
+}
+
+function toggleJournalList() {
+    var elJournalList = document.querySelector('.journal-list');
+    elJournalList.classList.toggle('open-menu');
+}
+
+var gMouseOverListenerAttached = false;
+
+function attachToggleJournalList(ev) {
+    if (document.body.clientWidth > 720) {
+        if (gMouseOverListenerAttached === true) return;
+        var elJournal = document.querySelector('.journal');
+        elJournal.removeEventListener('click', toggleJournalList);        
+        elJournal.addEventListener('mouseover', toggleJournalList);
+        elJournal.addEventListener('mouseout', toggleJournalList);
+
+        gMouseOverListenerAttached = true;
+    } else {
+        if (gMouseOverListenerAttached === false) return;
+        var elJournal = document.querySelector('.journal');
+        elJournal.addEventListener('click', toggleJournalList);
+        elJournal.removeEventListener('mouseover', toggleJournalList);
+        elJournal.removeEventListener('mouseout', toggleJournalList);
+
+        gMouseOverListenerAttached = false;
+    }
+}
+
+function stopClickPropo(ev) {
+    ev.stopPropagation();
 }
