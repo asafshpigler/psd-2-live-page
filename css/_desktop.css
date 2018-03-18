@@ -1,0 +1,19 @@
+header ul li {
+    width: 130px;
+}
+
+.txt-container h2 {
+    font-size: 28px;
+    line-height: initial;    
+}
+
+.txt-container p {
+    font-size: initial;
+    line-height: initial;
+}
+
+.txt-container button {
+    font-size: initial;
+    padding: 10px 23px;
+
+}

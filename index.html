@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>psd2Live</title>
+    <link rel="stylesheet" href="font/font-awesome.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="clean-body">
+    <header>
+        <div class="container flex flex-space-around">
+            <div class="logo">Blogin
+                <span>.</span>
+            </div>
+            <nav>
+                <ul class="flex clean-list">
+                    <li>journal</li>
+                    <li>about</li>
+                    <li>work</li>
+                    <li>contact</li>
+                </ul>
+            </nav>
+            <div class="fas fa-bars hamburger" onclick="toggleMenu()">
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <div>
+            <img src="img/1.png" alt="tree">
+            <div class="txt-container">
+                <h2>Duis aute irure dolor in henderit in voluptate.</h2>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <br/>
+                    <br/> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                <button class="flex" onclick="toggleModal()" onmouseover="toggleArrow(this)" onmouseout="toggleArrow(this)">
+                    Continue Reading
+                    <img class="arrow-right" src="img/arrow-right-green.png" alt="right navigation arrow">
+                </button>
+            </div>
+        </div>
+        <div>
+            <img src="img/2.png" alt="tree">
+            <div class="txt-container">
+                <h2>Duis aute irure dolor in henderit in voluptate.</h2>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <br/>
+                    <br/> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                <button class="flex" onclick="toggleModal()" onmouseover="toggleArrow(this)" onmouseout="toggleArrow(this)">
+                    Continue Reading
+                    <img class="arrow-right" src="img/arrow-right-green.png" alt="right navigation arrow">
+                </button>
+            </div>
+        </div>
+        <div>
+            <img src="img/3.png" alt="tree">
+            <div class="txt-container">
+                <h2>Duis aute irure dolor in henderit in voluptate.</h2>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <br/>
+                    <br/> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                <button class="flex" onclick="toggleModal()" onmouseover="toggleArrow(this)" onmouseout="toggleArrow(this)">
+                    Continue Reading
+                    <img class="arrow-right" src="img/arrow-right-green.png" alt="right navigation arrow">
+                </button>
+            </div>
+        </div>
+        <nav class="flex page-nav flex-space-around">
+            <ul class="clean-list" onmouseover="togglePageNavColor(this)" onmouseout="togglePageNavColor(this)">
+                <li class="arrow arrow-left">
+                    <img src="img/arrow-left.png" alt="left navigation arrow">
+                </li>
+                <li>
+                    <h3>Previous</h3>
+                </li>
+            </ul>
+            <ul class="clean-list" onmouseover="togglePageNavColor(this)" onmouseout="togglePageNavColor(this)">
+                <li>
+                    <h3>Next</h3>
+                </li>
+                <li class="arrow arrow-right">
+                    <img src="img/arrow-right.png" alt="right navigation arrow">
+                </li>
+            </ul>
+        </nav>
+    </main>
+    <footer class="flex">
+        <div class="logo">Blogin
+            <span>.</span>
+        </div>
+        <h3>© 2014 Blogin.com - All Rights Reserved - Find more free Templates at
+            <span>Pixelhint.com</span>
+        </h3>
+        <ul class="flex clean-list social-media">
+            <li>
+                <button class="fab fa-facebook-f"></button>
+            </li>
+            <li>
+                <button class="fab fa-twitter"></button>
+            </li>
+            <li>
+                <button class="fab fa-behance"></button>
+            </li>
+            <li>
+                <button class="fab fa-dribbble"></button>
+            </li>
+        </ul>
+    </footer>
+
+    <div class="modal">
+        <div class="background"></div>
+        <div class="modal-content flex">
+            <div class="modal-header flex">
+                <button class="fa fa-times flex flex-center" onclick="toggleModal()"></button>
+            </div>
+            <div class="modal-body flex flex-center">
+                <h3>Join us now!</h3>
+                <input type="textbox" />
+                <button class="far fa-envelope"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+header nav {
+    position: initial;
+    max-height: none;
+}
+
+header ul {
+    position: initial;    
+    flex-direction: row;
+    z-index: inherit;
+}
+
+header ul li {
+    width: 110px;
+    margin: 0;
+    height: 130px;
+    line-height: 130px;
+    background-color: transparent;
+    transition: .3s;
+}
+
+header .hamburger {
+    display: none;
+}
+
+main>div>:not(:last-child), .txt-container>:not(:last-child) {
+    margin-bottom: initial;
+}
+
+main > div > img {
+    width: 49%;
+    max-width: 480px;
+}
+
+.txt-container {
+    width: 47.5%;
+}
+
+.txt-container h2 {
+    font-size: 2.6vw;
+}
+
+.txt-container p {
+    font-size: 1.6vw;
+    line-height: 2vw;
+}
+
+.txt-container button {
+    font-size: 1.5vw;
+    padding: 1vw 2vw;
+}
+
+.modal-content {
+    height: 400px;
+    width: 650px;
+}
